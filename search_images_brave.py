@@ -1,5 +1,3 @@
-import os
-
 import dotenv
 import requests
 
@@ -11,7 +9,7 @@ def search_images_brave(term, max_images=100):
     headers = {
         "accept": "application/json",
         "Accept-Encoding": "gzip",
-        "x-subscription-token": os.getenv("BRAVE_SEARCH_API_KEY"),
+        "x-subscription-token": "BSAS6gw_pLWv7hLJ10bu7OMzZGKDbmy",
     }
     params = {"q": term, "count": max_images}
 
